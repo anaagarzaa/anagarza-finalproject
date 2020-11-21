@@ -1,30 +1,20 @@
 {% extends '_templates/base.njk' %}
 
 {% block content %}
-<article class="container">
-  <h1>Queen's Discography</h1>
-  <p>Intro text here.</p>
-  <div class="row">
+  <article class="container">
+    <h1>Queen's Discography</h1>
+    <p>Intro text here.</p>
+    <div class="row">
     {% for album in queen.discography %}
-  <div class="col-sm-6">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">{{ album.title }}</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+      <div class="col-sm-6 col-lg-4">
+        <div class="card">
+          <img src="img/discs/{{ album.image}}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">{{ album.title }}</h5>
+            <p class="card-text">{{ album.year }}</p>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
    {% endfor %}
-  <div class="col-sm-6">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-  </div>
-</div>
-</article>
+
 {% endblock %}
