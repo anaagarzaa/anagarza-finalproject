@@ -3,10 +3,10 @@
 {% block content %}
   <article class="container">
     <h1>Queen's Discography</h1>
-    <p>Intro text here.</p>
+    <p><center>A list of Queen's original studion albums</center></p>
     <div class="row">
     {% for album in queen.discography %}
-      <div class="col-sm-6 col-lg-4">
+      <div class="col-sm-6 col-lg-4 mb-2">
         <div class="card">
           <img src="img/discs/{{ album.image}}" class="card-img-top" alt="...">
           <div class="card-body">
@@ -16,5 +16,5 @@
         </div>
       </div>
    {% endfor %}
-
+   </div>
 {% endblock %}

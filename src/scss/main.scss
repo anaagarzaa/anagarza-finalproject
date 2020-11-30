@@ -1,10 +1,11 @@
 // Custom variable overrides
 // See node_modules/bootstrap/scss/_variables.scss
 
-// $body-bg: black;
-// $body-color: white;
-// $link-hover-color: grey;
-// $font-family-sans-serif: "Helvetica Neue";
+$body-bg: #D1AED6;
+$body-color: #360674;
+$link-hover-color: grey;
+$font-family: 'Open Sans', sans-serif;
+
 
 /* bootstrap */
 // Option A: Include all of Bootstrap
@@ -20,7 +21,16 @@
 
 // Import partials
 @import "nav";
+@import "jumbotron";
+@import url('https://fonts.googleapis.com/css2?family=New+Rocker&family=Open+Sans&display=swap');
+@import "bake-members";
 
 h3 {
   font-size: 1.5rem;
+}
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  font-family: 'New Rocker', cursive;
 }

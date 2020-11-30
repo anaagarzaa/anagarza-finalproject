@@ -3,12 +3,12 @@
 {% block content %}
 <article class="container">
   <h1>Queen's Tour Dates 2021</h1>
-  <p>Dates are subject to change due to COVID-19</p>
+  <p><center>Dates are subject to change due to COVID-19</center></p>
 </article>
 <div class="container">
 {% for show in queen.tour2021 %}
   <table class="table table-striped">
-    <thead>
+     <thead>
       <tr>
           <th>Date</th>
           <th>City</th>
@@ -19,9 +19,9 @@
       <tr>
         <td>{{ show.date }}</td>
         <td>{{ show.city }}</td>
-        <td>{{ show.venue }}</td> 
-      </tr>
-  ` </tbody>
+        <td>{{ show.venue }}</td>
+      </tr> 
+    </tbody>
   </table>
 {% endfor %}
 </div>
