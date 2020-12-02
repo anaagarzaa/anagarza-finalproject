@@ -4,8 +4,15 @@
     color: #360674;
     padding-top: 12rem;
     text-align: center;
-  }
+}
 
 .jumbotron {
     margin-bottom: 30px;
+  }
+
+  .jumbo-title {
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color: #D1AED6;
   }

@@ -6,7 +6,6 @@
   <p><center>Dates are subject to change due to COVID-19</center></p>
 </article>
 <div class="container">
-{% for show in queen.tour2021 %}
   <table class="table table-striped">
      <thead>
       <tr>
@@ -16,14 +15,15 @@
       </tr>
     </thead>
     <tbody>
+      {% for show in queen.tour2021 %}
       <tr>
         <td>{{ show.date }}</td>
         <td>{{ show.city }}</td>
         <td>{{ show.venue }}</td>
       </tr> 
+      {% endfor %}
     </tbody>
   </table>
-{% endfor %}
 </div>
 
 {% endblock %}
